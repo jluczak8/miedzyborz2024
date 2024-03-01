@@ -25,7 +25,7 @@ export const sendEmail = async (formData: FormData): Promise<IContactDataError |
 
   const data = await resend.emails.send({
     from: "Międzybórz 2024 <onboarding@resend.dev>",
-    to: "jakubluczak@outlook.com",
+    to: "miedzyborz2024@gmail.com",
     subject: "Wiadomość z formularza kontaktowego",
     reply_to: senderEmail as string,
     react: React.createElement(ContactFormEmail, {
