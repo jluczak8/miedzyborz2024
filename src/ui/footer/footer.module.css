@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  width: 100%;
+  height: 75px;
+  background-color: var(--fontcolor-dark);
+  color: var(--fontcolor-light);
+  font-size: var(--fontsize-s);
+}
+
+.info {
+  max-width: 60%;
+}
+
+.info a {
+  color: var(--fontcolor-light);
+  transition: 0.25s ease-in-out;
+}
+
+.info a:hover {
+  color: var(--secondarycolor-red);
+}
+
+.socials img {
+  width: 40px;
+  filter: var(--filtercolor-light);
+  transition: 0.25s ease-in-out;
+}
+
+.socials img:hover {
+  filter: var(--filtercolor-secondaryred)
+}
+
+/*
+==============================================================
+MEDIA
+==============================================================
+*/
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 10px 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px 25px;
+  }
+}

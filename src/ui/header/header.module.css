@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 10px 100px;
+  width: 100%;
+  height: 100px;
+  background-color: var(--primarycolor-light);
+  box-shadow: 0px 1px 0px lightgray;
+}
+
+.container img {
+  width: 330px;
+  height: 75px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+/*
+==============================================================
+MEDIA
+==============================================================
+*/
+
+@media only screen and (max-width: 1599px) {
+  .container {
+    padding: 10px 75px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    padding: 10px 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    padding: 10px 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 10px 50px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container {
+    padding: 10px 30px;
+  }
+}

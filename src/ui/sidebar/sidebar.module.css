@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  z-index: 999;
+  padding: 10px;
+  background-color: var(--fontcolor-dark);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+
+.item img {
+  width: 40px;
+  filter: var(--filtercolor-light);
+  transition: 0.25s ease-in-out;
+}
+
+.item img:hover {
+  filter: var(--filtercolor-secondaryred)
+}
+
+/*
+==============================================================
+MEDIA
+==============================================================
+*/
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    display: none;
+  }
+}

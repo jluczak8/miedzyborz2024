@@ -1,0 +1,184 @@
+/*
+GENERAL
+*/
+
+.container {
+  display: flex;
+  align-items: center;
+  background-image: url("../../assets/images/letter.png");
+  background-size: 100% 50%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  margin: 50px 0 50px 100px;
+  padding: 100px;
+  width: 50%;
+  background-color: var(--primarycolor-dark);
+  color: var(--fontcolor-light);
+  box-shadow: -10px 0 20px rgba(75, 75, 75, 0.3), 10px 0 20px rgba(75, 75, 75, 0.3), 0 10px 20px rgba(75, 75, 75, 0.3);
+}
+
+.box hr {
+  display: none;
+}
+
+/*
+DETAILS
+*/
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 50%;
+}
+
+.detailsPart {
+  margin-top: 20px;
+}
+
+.icon img {
+  width: 20px;
+  filter: var(--filtercolor-light);
+  user-select: none;
+}
+
+.content a {
+  color: var(--fontcolor-light);
+  transition: 0.25s ease-in-out;
+}
+
+.content a:hover {
+  color: var(--secondarycolor-red);
+}
+
+/*
+FORM
+*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+}
+
+.form button {
+  padding: 10px;
+  width: fit-content;
+  background-color: var(--primarycolor-light);
+  color: var(--fontcolor-dark);
+  border: none;
+  border-radius: 5px;
+  transition: 0.25s ease-in-out;
+}
+
+.form button:hover {
+  background-color: var(--secondarycolor-red);
+  color: var(--fontcolor-light);
+  cursor: pointer;
+}
+
+/*
+==============================================================
+MEDIA
+==============================================================
+*/
+
+@media only screen and (max-width: 1400px) {
+  .box {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .box {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    justify-content: center;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 25px;
+    width: fit-content;
+    max-width: 90%;
+  }
+
+  .box hr {
+    display: block;
+    width: 80%;
+  }
+
+  .details {
+    width: 75%;
+  }
+
+  .form {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .form button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .details h4 {
+    font-size: 16px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .form h4 {
+    font-size: 16px;
+  }
+
+  .form input {
+    font-size: 12px;
+  }
+
+  .form textarea {
+    font-size: 12px;
+  }
+
+  .form button {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,141 @@
+/*
+GENERAL
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: var(--fontcolor-dark);
+}
+
+/*
+INTRO
+*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+  max-height: calc(100vh - 100px);
+  background-image: url("../../assets/images/ballot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 200px 0;
+  width: 80%;
+  color: var(--fontcolor-light);
+}
+
+.box h1 {
+  font-size: var(--fontsize-s);
+}
+
+.box h2 {
+  font-size: 48px;
+}
+
+.box p {
+  font-size: var(--fontsize-s);
+}
+
+/*
+INFO
+*/
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+.decision {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.decision a {
+  padding: 15px;
+  width: fit-content;
+  background-color: var(--primarycolor-dark);
+  color: var(--fontcolor-light);
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.25s ease-in-out;
+}
+
+.decision a:hover {
+  background-color: var(--secondarycolor-red);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.details p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details a {
+  position: relative;
+  font-style: italic;
+  text-decoration: underline;
+  transition: 0.25s ease-in-out;
+}
+
+.details a:hover {
+  color: var(--secondarycolor-red);
+}
+
+/*
+==============================================================
+MEDIA
+==============================================================
+*/
+
+@media only screen and (max-width: 1500px) {
+  .decision {
+    align-items: center;
+    text-align: center;
+  }
+
+  .details {
+    align-items: center;
+    text-align: center;
+  }
+
+ .details p {
+    flex-direction: column;
+ }
+}
+
+@media only screen and (max-width: 1023px) {
+  .box h2 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .intro {
+    max-height: none;
+  }
+
+  .box {
+    padding: 50px;
+  }
+}
