@@ -5,8 +5,16 @@ GENERAL
 .container {
   display: flex;
   align-items: center;
-  background-image: url("../../assets/images/letter.png");
-  background-size: 100% 50%;
+}
+
+.background {
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  width: 100%;
+  height: 50%;
+  background-image: url("../../assets/images/letter.jpg");
+  background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }

@@ -9,7 +9,7 @@ export default function Candidates(): JSX.Element {
   return (
     <main className={`${styles.container} page`}>
       <h1>Kandydaci</h1>
-      <p>Pełna lista kandydatów zostanie opublikowana niebawem.</p>
+      <p>Lista kandydatów zostanie opublikowana niebawem.</p>
     </main>
   );
 };

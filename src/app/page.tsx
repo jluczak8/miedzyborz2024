@@ -113,13 +113,25 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </section>
+      <section className={styles.register}>
+        <div className={styles.content}>
+          <div>
+            <h3>Rejestr wpłat</h3>
+            <a href="/rejestrwplat.pdf" target="_blank">Sprawdź</a>
+          </div>
+          <div>
+            <h3>Rejestr kredytów</h3>
+            <a href="/rejestrkredytow.pdf" target="_blank">Sprawdź</a>
+          </div>
+        </div>
+      </section>
       <section className={styles.contact}>
         <div className={styles.box}>
           <p>Masz do nas jakieś pytanie?</p>
           <p>Przychodzą Ci do głowy pomysły na naszą gminę?</p>
           <p>Chciał(a)byś nas wspomóc w kampanii?</p>
           <Link href="/kontakt">
-            <button>Skontaktuj się z nami</button>
+            Skontaktuj się z nami
           </Link>
           <p>już teraz!</p>
         </div>

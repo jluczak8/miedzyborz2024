@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function Contact(): JSX.Element {
   return (
     <main className={`${styles.container} page`}>
+      <div className={styles.background} />
       <div className={styles.box}>
       <section className={styles.details}>
         <h4>Informacje kontaktowe KWW MIĘDZYBÓRZ 2024</h4>
