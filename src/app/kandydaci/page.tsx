@@ -12,7 +12,7 @@ export default function Candidates(): JSX.Element {
     <main className={`${styles.container} page`}>
       <section className={styles.mayor}>
         <div className={styles.mayorInfo}>
-          <h1>Kandydat na burmisrza <span className={styles.name}>Gminy</span> <span className={styles.lastname}>Międzybórz</span></h1>
+          <h1>Kandydat na burmistrza <span className={styles.name}>Miasta i Gminy </span> <span className={styles.lastname}>Międzybórz</span></h1>
           <h2>Kornel Mateusz PACHOLAK</h2>
         </div>
         <div className={styles.mayorImage}>
