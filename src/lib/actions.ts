@@ -24,7 +24,7 @@ export const sendEmail = async (formData: FormData): Promise<IContactDataError |
   };
 
   const data = await resend.emails.send({
-    from: "Międzybórz 2024 <onboarding@resend.dev>",
+    from: "Międzybórz 2024 <kontakt@kwwmiedzyborz2024.pl>",
     to: "miedzyborz2024@gmail.com",
     subject: "Wiadomość z formularza kontaktowego",
     reply_to: senderEmail as string,

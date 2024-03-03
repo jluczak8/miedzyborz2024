@@ -23,7 +23,7 @@ export default function ContactFormEmail({
       <Body>
         <Container>
           <Section>
-            <Heading as="h2">Otrzymałeś nową wiadomość z formularza kontaktowego strony Międzybórz 2024.</Heading>
+            <Heading as="h3">Otrzymałeś nową wiadomość z formularza kontaktowego strony Międzybórz 2024.</Heading>
             <Text>{message}</Text>
             <Hr />
             <Text>Nadawca wiadomości: {senderEmail}</Text>
