@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import mayorImage from "@/assets/images/kornelpacholak.jpg";
+import mayorImage from "@/assets/images/kornelpacholak.png";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -11,15 +11,19 @@ export default function Candidates(): JSX.Element {
   return (
     <main className={`${styles.container} page`}>
       <section className={styles.mayor}>
-        <div className={styles.mayorInfo}>
-          <h1>Kandydat na Burmistrza <span className={styles.name}>Miasta i Gminy </span> <span className={styles.lastname}>Międzybórz</span></h1>
-          <h2>Kornel Mateusz PACHOLAK</h2>
-        </div>
-        <div className={styles.mayorImage}>
-          <Image
-            src={mayorImage}
-            alt="Kandydat na burmistrza - Kornel Pacholak"
-          />
+        <div className={styles.mayorContainer}>
+          <div className={styles.mayorInfo}>
+            <h1>Kandydat na Burmistrza <span className={styles.name}>Miasta i Gminy </span> <span className={styles.lastname}>Międzybórz</span></h1>
+            <h2>Kornel Mateusz PACHOLAK</h2>
+          </div>
+          <div className={styles.mayorImage}>
+            <Image
+              src={mayorImage}
+              alt="Kandydat na Burmistrza - Kornel Pacholak"
+              quality={95}
+              priority={true}
+            />
+          </div>
         </div>
       </section>
       <section className={styles.councillors}>

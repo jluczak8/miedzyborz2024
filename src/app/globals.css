@@ -1,4 +1,5 @@
 :root {
+  --bgimg: url("../assets/images/background.jpg");
   --bgcolor: #f9f9f9;
   --primarycolor-light: #f6f6f6;
   --primarycolor-dark: #343434;
@@ -22,7 +23,9 @@
 }
 
 body {
+  background-image: var(--bgimg);
   background-color: var(--bgcolor);
+  background-repeat: round;
   color: var(--fontcolor-dark);
   font-size: var(--fontsize-m);
 }

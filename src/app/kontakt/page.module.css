@@ -17,6 +17,7 @@ GENERAL
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .box {
@@ -28,6 +29,7 @@ GENERAL
   width: 50%;
   background-color: var(--primarycolor-dark);
   color: var(--fontcolor-light);
+  border-radius: 5px;
   box-shadow: -10px 0 20px rgba(75, 75, 75, 0.3), 10px 0 20px rgba(75, 75, 75, 0.3), 0 10px 20px rgba(75, 75, 75, 0.3);
 }
 

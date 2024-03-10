@@ -27,7 +27,7 @@ export default function Home(): JSX.Element {
             <div className={styles.tileImage}>
               <Image
                 src={programImage}
-                alt="Program wyborczy."
+                alt="Program wyborczy"
                 priority={true}
               />
             </div>
@@ -36,7 +36,7 @@ export default function Home(): JSX.Element {
             <div className={styles.tileImage}>
               <Image
                 src={candidatesImage}
-                alt="Nasi kandydaci."
+                alt="Nasi kandydaci"
                 priority={true}
               />
             </div>
@@ -61,7 +61,7 @@ export default function Home(): JSX.Element {
             <div className={styles.tileImage}>
               <Image
                 src={committeeImage}
-                alt="Informacje o komitecie."
+                alt="Informacje o komitecie"
                 priority={true}
               />
             </div>
@@ -116,12 +116,12 @@ export default function Home(): JSX.Element {
       <section className={styles.register}>
         <div className={styles.content}>
           <div>
-            <h3>Rejestr wpłat</h3>
-            <a href="/rejestrwplat.pdf" target="_blank">Sprawdź</a>
-          </div>
-          <div>
             <h3>Rejestr kredytów</h3>
             <a href="/rejestrkredytow.pdf" target="_blank">Sprawdź</a>
+          </div>
+          <div>
+            <h3>Rejestr wpłat</h3>
+            <a href="/rejestrwplat.pdf" target="_blank">Sprawdź</a>
           </div>
         </div>
       </section>

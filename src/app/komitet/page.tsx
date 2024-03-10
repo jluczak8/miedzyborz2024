@@ -10,7 +10,7 @@ export default function Committee(): JSX.Element {
     <main className={`${styles.container} page`}>
       <section className={styles.intro}>
         <div className={styles.box}>
-          <h1>Wybory samorządowe 2024</h1>
+          <h1>Utworzony w celu wyborów samorządowych zarządzonych na dzień 07 kwietnia 2024 roku</h1>
           <h2>KOMITET WYBORCZY WYBORCÓW MIĘDZYBÓRZ 2024</h2>
           <p>wystawiający kandydatów do Rady Miejskiej oraz kandydata na Burmistrza Miasta i Gminy Międzybórz (kod teryt. 021405)</p>
         </div>

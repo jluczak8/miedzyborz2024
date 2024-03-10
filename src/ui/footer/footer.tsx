@@ -12,8 +12,8 @@ export default function Footer(): JSX.Element {
       </div>
       <div className={styles.socials}>
         <a
-            href="https://www.facebook.com/profile.php?id=61553674289158"
-            target="_blank"
+          href="https://www.facebook.com/profile.php?id=61553674289158"
+          target="_blank"
         >
           <Image
             src={facebookIcon}

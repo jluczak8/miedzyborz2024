@@ -8,6 +8,7 @@
   background-color: var(--fontcolor-dark);
   color: var(--fontcolor-light);
   font-size: var(--fontsize-s);
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .info {

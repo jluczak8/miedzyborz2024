@@ -21,6 +21,7 @@ WELCOME
   background-image: url("../assets/images/welcome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .tiles {
@@ -31,7 +32,7 @@ WELCOME
   width: 80%;
   height: 600px;
   background-color: var(--primarycolor-light);
-  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1), 10px 0 20px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5), 10px 0 20px rgba(0, 0, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -83,7 +84,6 @@ NEWS
 .news {
   display: flex;
   margin-top: 350px;
-  margin-bottom: 50px;
   width: 100%;
   height: 600px;
 }
@@ -97,7 +97,7 @@ NEWS
   width: 50%;
   background-color: var(--primarycolor-dark);
   color: var(--fontcolor-light);
-  box-shadow: 0px 3px 3px 2px lightgray;
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.5), 0px -3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .infoText {
@@ -132,8 +132,14 @@ NEWS
 }
 
 .card {
-  box-shadow: 0px 1px 1px 2px var(--fontcolor-dark);
+  border: 3px solid var(--secondarycolor-green);
+  border-image: linear-gradient(var(--secondarycolor-green), var(--secondarycolor-red)) 1;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2), 0px -1px 1px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
+
+.card:last-child {
+  border-right: none;
 }
 
 .card img {
@@ -151,12 +157,12 @@ REGISTER
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  margin-bottom: 50px;
   width: 100%;
   height: 400px;
   background-image: url("../assets/images/money.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5), 0px -5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -202,7 +208,9 @@ CONTACT
 */
 
 .contact {
+  margin-top: 50px;
   width: 100%;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .box {
@@ -259,7 +267,7 @@ MEDIA
   }
 
   .content {
-    width: 75%;
+    width: 60%;
   }
 }
 
@@ -276,6 +284,10 @@ MEDIA
 
   .cards {
     width: 750px;
+  }
+
+  .content {
+    width: 65%;
   }
 }
 
@@ -319,13 +331,15 @@ MEDIA
   }
 
   .card {
+    border: none;
+    border-image: none;
     box-shadow: 0px 1px 5px black;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .content {
-    width: 85%;
+    width: 55%;
   }
 
   .content h3 {
@@ -334,6 +348,12 @@ MEDIA
 
   .content a {
     font-size: var(--fontsize-m);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    width: 65%;
   }
 }
 
@@ -362,7 +382,6 @@ MEDIA
 
   .content {
     flex-direction: column;
-    gap: 25px;
     height: 75%;
   }
 }

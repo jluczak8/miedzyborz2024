@@ -1,8 +1,8 @@
 "use client";
 
 import toast from "react-hot-toast";
-import { IContactDataError } from "@/lib/definitions";
 import { sendEmail } from "@/lib/actions";
+import { IContactDataError } from "@/lib/definitions";
 import { handleContactFormReset } from "@/lib/utils";
 
 export default function ContactForm(): JSX.Element {

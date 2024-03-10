@@ -22,7 +22,7 @@ export default function Contact(): JSX.Element {
           <div className={styles.icon}>
             <Image
               src={locationIcon}
-              alt="Adres siedziby komitetu:"
+              alt="Adres siedziby komitetu"
               width={20}
               height={20}
             />
@@ -37,7 +37,7 @@ export default function Contact(): JSX.Element {
           <div className={styles.icon}>
             <Image
               src={phoneIcon}
-              alt="Numer telefonu:"
+              alt="Numer telefonu"
               width={20}
               height={20}
             />
@@ -50,7 +50,7 @@ export default function Contact(): JSX.Element {
           <div className={styles.icon}>
             <Image
               src={envelopeIcon}
-              alt="Adres email:"
+              alt="Adres email"
               width={20}
               height={20}
             />

@@ -3,7 +3,7 @@ GENERAL
 */
 
 .container {
-  background-color: #fefefe;
+  background-color: var(--bgcolor);
 }
 
 /*
@@ -11,37 +11,49 @@ MAYOR
 */
 
 .mayor {
+  background-image: url("../../assets/images/mayorbg.jpg");
+}
+
+.mayorContainer {
   display: flex;
-  height: calc(100vh - 100px);
-  background-color: #fefefe;
+  background: linear-gradient(180deg, transparent 90%, var(--secondarycolor-red) 10%);
 }
 
 .mayorInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
+  position: relative;
+  bottom: 50px;
   padding: 20px 100px 20px 100px;
+  overflow: hidden;
 }
 
 .mayorInfo h1 {
+  padding: 20px;
+  width: fit-content;
+  background-color: var(--secondarycolor-green);
+  color: var(--fontcolor-light);
   font-size: 72px;
+  border-radius: 5px;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.3), 10px 0 20px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .mayorInfo h2 {
+  padding: 20px;
+  width: fit-content;
+  background-color: var(--secondarycolor-red);
+  color: var(--fontcolor-light);
   font-size: 48px;
-}
-
-.name {
-  color: var(--secondarycolor-green);
-}
-
-.lastname {
-  color: var(--secondarycolor-red);
+  border-radius: 5px;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.3), 10px 0 20px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .mayorImage {
   display: flex;
   align-items: flex-end;
+  background: linear-gradient(-70deg, var(--secondarycolor-green) 52%, transparent 48%);
 }
 
 .mayorImage img {
@@ -57,33 +69,23 @@ COUNCILLORS
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: var(--bgimg);
 }
 
 .divider {
-  display: flex;
   width: 100%;
-  height: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.dividerGreen {
-  width: 65%;
-  height: 100%;
-  background-color: var(--secondarycolor-green);
-}
-
-.dividerRed {
-  width: 35%;
-  height: 100%;
-  background-color: var(--secondarycolor-red);
+  height: 0.1px;
+  background-color: #888;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9), 0 -1px 5px rgba(0, 0, 0, 0.9);
 }
 
 .box {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  margin: 1px 0 1px 0;
   padding: 50px;
-  background-color: #ececec;
+  background-color: var(--primarycolor-light);
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1), 10px 0 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -110,44 +112,25 @@ MEDIA
   }
 }
 
-@media only screen and (max-width: 1150px) {
-  .mayorInfo h1 {
-    font-size: 48px;
-  }
-
-  .mayorInfo h2 {
-    font-size: 32px;
-  }
-
-  .mayorImage img {
-    width: 363.40px;
-    height: 550px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   .mayorInfo {
-    padding: 20px 50px 20px 25px;
+    padding: 20px 50px 20px 20px;
   }
 
   .mayorInfo h1 {
-    font-size: 32px;
+    font-size: 42px;
   }
 
   .mayorInfo h2 {
-    font-size: 24px;
-  }
-
-  .mayorImage img {
-    width: 363.40px;
-    height: 550px;
+    font-size: 32px;
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .mayor {
+@media only screen and (max-width: 1023px) {
+  .mayorContainer {
     padding: 50px;
     height: auto;
+    background: transparent;
   }
 
   .mayorInfo {
@@ -155,16 +138,87 @@ MEDIA
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    bottom: 0;
     text-align: center;
+  }
+
+  .mayorInfo {
+    padding: 20px 50px 20px 25px;
+  }
+
+  .mayorInfo h1 {
+    padding: 0;
+    background: none;
+    color: var(--fontcolor-dark);
+    box-shadow: none;
+  }
+
+  .mayorInfo h2 {
+    padding: 0;
+    background: none;
+    color: var(--fontcolor-dark);
+    box-shadow: none;
+  }
+
+  .name {
+    color: var(--secondarycolor-green);
+  }
+
+  .lastname {
+    color: var(--secondarycolor-red);
   }
 
   .mayorImage {
     display: none;
   }
+
+  .divider {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    background: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 -10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .dividerGreen {
+    width: 65%;
+    height: 100%;
+    background-color: var(--secondarycolor-green);
+  }
+
+  .dividerRed {
+    width: 35%;
+    height: 100%;
+    background-color: var(--secondarycolor-red);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .mayorInfo h1 {
+    font-size: 32px;
+  }
+
+  .mayorInfo h2 {
+    font-size: 20px;
+  }
+
+  .councillors h2 {
+    font-size: 32px;
+  }
+
+  .box {
+    width: fit-content;
+  }
 }
 
 @media only screen and (max-width: 350px) {
-  .mayor {
+  .mayorContainer {
     padding: 50px 20px 50px 20px;
   }
 
